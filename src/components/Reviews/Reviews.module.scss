@@ -1,0 +1,25 @@
+.reviews {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  background-color: #2C6FEE1A;
+  gap: 1.6rem;
+  padding: 2.4rem 1.6rem 3.6rem 1.6rem;
+  border-radius: 1rem;
+}
+.title {
+  color: #1E1E1E;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+}
+
+.primaryBtn {
+  background-color: #2C6FEE;
+}
+
+.secondaryBtn {
+  background-color: #FC993E;
+}

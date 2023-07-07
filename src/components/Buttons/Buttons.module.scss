@@ -1,0 +1,24 @@
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  button {
+    color: #fff;
+    font-size: 2.4rem;
+    height: 6.2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+}
+
+.primaryBtn {
+  background-color: #2C6FEE;
+}
+
+.secondaryBtn {
+  background-color: #FC993E;
+}

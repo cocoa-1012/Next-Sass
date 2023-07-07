@@ -1,0 +1,42 @@
+.detailCard {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  min-height: 7.6rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1rem;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    // padding-right: 7rem;
+    flex: 1;
+
+    img {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.cancelBtn {
+  text-align: center;
+  border: solid 1px #2C6FEE;
+  border-radius: 0.5rem;
+  height: 3.8rem;
+  cursor: pointer;
+  padding-right: 0 !important;
+}
+.tableTitle {
+  display: flex;
+  width: 100%;
+
+ 
+}
