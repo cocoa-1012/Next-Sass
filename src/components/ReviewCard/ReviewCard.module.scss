@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .reviewCard {
   display: flex;
   flex: 1;
@@ -7,6 +9,9 @@
   gap: 1.6rem;
   padding: 1.6rem 1.6rem;
   border-radius: 1rem;
+  @include responsive(md) {
+    gap: 1rem;
+  }
 }
 .cardHeader {
   display: flex;
@@ -25,18 +30,30 @@
   font-size: 2rem;
   font-weight: 500;
   gap: 1.2rem;
+  
+  @include responsive(md) {
+    white-space: pre-wrap;
+    font-size: 1.4rem;
+  }
 }
 .dateTime {
   font-size: 1.6rem;
   font-weight: 400;
   color: #4C4C4C;
+  @include responsive(md) {
+    white-space: pre-wrap;
+    font-size: 1.4rem;
+  }
 }
 .content {
   color: #1e1e1e;
   font-size: 1.6rem;
   font-weight: 400;
   text-align: left;
-  margin: 0;
+  margin: 0; 
+  @include responsive(md) {
+    font-size: 1.4rem;
+  }
 }
 
 .cardFooter {
@@ -44,21 +61,37 @@
   align-items: center;
   justify-content: space-between;
 
+  @include responsive(xs) {
+    flex-direction: column;
+    gap: 2rem;
+  }
   p {
     font-size: 2.4rem;
     color: #fc993e;
     margin: 0;
+    @include responsive(md) {
+      font-size: 2.0rem;
+    }
+    @include responsive(xs) {
+      width: 100%;
+    }
   }
 }
 
 .coloredStar {
   font-size: 3rem;
   color: #fc993e;
+  @include responsive(md) {
+    font-size: 2.5rem;
+  }
 }
 
 .uncoloredStar {
   font-size: 3rem;
   color: #B0B0B1;
+  @include responsive(md) {
+    font-size: 2.5rem;
+  }
 }
 
 .askBtn {
@@ -73,4 +106,11 @@
   padding-left: 1.4rem;
   padding-right: 1.4rem;
   cursor: pointer;
+  @include responsive(md) {
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+  @include responsive(xs) {
+    width: 100%;
+  }
 }

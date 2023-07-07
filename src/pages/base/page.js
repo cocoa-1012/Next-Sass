@@ -7,9 +7,14 @@ import styles from "./Base.module.scss";
 export default function Base() {
   return (
     <Container>
+      <div className={styles.md_view}>
+        <Buttons />
+      </div>
       <Upcoming />
       <div className={styles.rightDiv}>
-        <Buttons />
+        <div className={styles.lg_view}>
+          <Buttons />
+        </div>
         <Reviews />
       </div>
     </Container>

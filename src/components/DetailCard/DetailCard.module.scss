@@ -1,7 +1,9 @@
+@import "../../styles/mixins";
+
 .detailCard {
   display: flex;
-  gap: 1rem;
   width: 100%;
+  gap: 1rem;
   min-height: 7.6rem;
   justify-content: center;
   align-items: center;
@@ -10,33 +12,76 @@
   padding-right: 2rem;
   border-radius: 1rem;
 
+  @include responsive(sm) {
+    flex-direction: column;
+    gap: 0;
+  }
+
   p {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #000;
     font-size: 1.6rem;
     font-weight: 400;
     // padding-right: 7rem;
     flex: 1;
 
+    @include responsive(md) {
+      font-size: 1.4rem;
+      min-height: 6.8rem;
+    }
+   
     img {
       margin-right: 1rem;
     }
   }
 }
 
+.midContainer {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+
+  @include responsive(sm) {
+    width: 100%;
+  }
+  
+  p {
+    margin: 0;
+  }
+}
+
+.teacherName {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dateTime {
+  color: #4C4C4C;
+}
+
 .cancelBtn {
+  width: 50%;
+  display: flex;
+  align-items: center;
   text-align: center;
-  border: solid 1px #2C6FEE;
+  justify-content: center;
+  font-size: 1.6rem;
+  background-color: white;
+  outline: none;
+  border: solid 1px #2c6fee;
   border-radius: 0.5rem;
   height: 3.8rem;
   cursor: pointer;
   padding-right: 0 !important;
+  white-space: nowrap;
+
+  @include responsive(md) {
+    font-size: 1.4rem;
+  }
 }
 .tableTitle {
   display: flex;
   width: 100%;
-
- 
 }

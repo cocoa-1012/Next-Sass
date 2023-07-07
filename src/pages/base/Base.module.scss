@@ -1,7 +1,25 @@
+@import "../../styles/mixins";
 .rightDiv {
   display: flex;
   width: 44.3rem;
   flex-direction: column;
   height: 100%;
   gap: 1.6rem;
+  @include responsive(xl) {
+    width: 100%;
+  }
+}
+
+.md_view {
+  display: none;
+  @include responsive(xl) {
+    display: block;
+  }
+}
+
+.lg_view {
+  display: block;
+  @include responsive(xl) {
+    display: none;
+  }
 }

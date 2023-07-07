@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .upcoming {
   display: flex;
   flex: 1;
@@ -9,6 +11,13 @@
   background-color: #2C6FEE1A;
   padding: 2.4rem 1.6rem 1.6rem 1.6rem;
   border-radius: 1rem;
+
+  @include responsive(md) {
+    gap: 0.8rem;
+  }
+  @include responsive(sm) {
+    padding: 0.8rem;
+  }
 }
 
 .title {
@@ -17,6 +26,12 @@
   font-weight: 500;
   text-align: left;
   margin: 0;
+  @include responsive(md) {
+    font-size: 2.0rem;
+  }
+  @include responsive(sm) {
+    padding-bottom: 0.8rem;
+  }
 }
 .tableTitle {
   display: flex;
@@ -24,10 +39,26 @@
   padding-left: 2rem;
   padding-right: 2rem;
 
+  
+  @include responsive(sm) {
+    display: none;
+  }
+
+}
+
+.midContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  
   p {
     color: #888889;
     font-size: 1.6rem;
-    width: 25%;
+    width: 50%;
     margin: 0;
+    @include responsive(md) {
+      font-size: 1.2rem;
+    }
   }
 }

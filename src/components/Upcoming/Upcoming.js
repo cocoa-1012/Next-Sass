@@ -78,10 +78,14 @@ const Upcoming = () => {
     <div className={styles.upcoming}>
       <p className={styles.title}>Upcoming classes</p>
       <div className={styles.tableTitle}>
-        <p>Class name</p>
-        <p>Teacher name</p>
-        <p>Date & Time</p>
-        <p></p>
+        <div className={styles.midContainer}>
+          <p>Class name</p>
+          <p>Teacher name</p>
+        </div>
+        <div className={styles.midContainer}>
+          <p>Date & Time</p>
+          <p></p>
+        </div>
       </div>
       {userData.map((item) => (
         <DetailCard item={item} />
